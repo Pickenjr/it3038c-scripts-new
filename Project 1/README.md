@@ -1,0 +1,1 @@
+This is my project 1. It is rather simple but it outputs the drives you have on your computer, the total Size of the drives, and how much space you have left on the hard drives.
