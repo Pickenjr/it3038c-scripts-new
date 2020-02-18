@@ -5,6 +5,7 @@ import socket, sys
 #for h in hosts:
 #   print(h + ": "+ socket.gethostbyname(h))
 
+def gethostnameByIP(h)
 try:
     hostname = str(sys.argv[1])
     ip = socket.gethostbyname(hostname)
