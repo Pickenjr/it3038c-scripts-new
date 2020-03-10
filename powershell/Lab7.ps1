@@ -1,5 +1,4 @@
-﻿Import-Module PackageManagement
-Find-Package x7Zip
+﻿Find-Package x7Zip
 
 #Save-Package x7Zip
 
