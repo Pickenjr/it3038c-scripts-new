@@ -1,7 +1,10 @@
 var http = require("http");
 var fs = require("fs");
 var os = require("os");
-var ip = require("ip")
+var ip = require("ip");
+var uptime = os.uptime();
+
+http.createServer(function(req, res){
 
 var server = http.createServer(function(req, res){
     if(req.url === "/") {
@@ -26,16 +29,17 @@ var server = http.createServer(function(req, res){
         <p>Total Memory: </p>
         <p>Number of CPUs: </p>
         </body>
-        </html>
-        `
-        res.writeHead(200, {"Content-Type":"text/plain"});
+        </html>`
+
+        res.writeHead(200, {"Content-Type":"text/html"});
         res.end(html);
     }
 
     else {
         res.writeHead(404, {"Content-Type": "text/plain"});
-        res.end(`404 File Not Found at ${req.url}`)
+        res.end(`404 File Not Found at ${req.url}`);
     }
-server.listen(3000);
+}).listen(3000);
 
 console.log("Server listening on port 3000");
+});
