@@ -16,7 +16,7 @@ If you don't have python installed navigate to https://www.python.org/downloads/
 
 ## Running the script. 
 Once Python is installed and running and you have downloaded Project3.py (NO OTHER FILE IS NECESSARY TO RUN THIS), navigate to the directory the script is stored in, using Powershell (not ISE) or command prompt.
-Once in the correct directory, run the script by running python Projec3.py
+Once in the correct directory, run the script by running the following command: python Projec3.py
 
 ### Outputs
 Once you have started the script you will be taken through a series of prompts to check if you have an account already stored in the UserInput.txt file.
