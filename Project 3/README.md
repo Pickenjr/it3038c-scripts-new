@@ -1,4 +1,4 @@
-# Rudimentary Username and Password checker Python.
+# Rudimentary Username and Password checker using Python.
 
 ## Prerequisites
 Please run this script on Windows. 
