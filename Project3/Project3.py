@@ -53,8 +53,9 @@ def user_find(file):                                                            
                         break                                                                                       # Breaks the loop once the condition has been satisfied.
                     else:                                                                                           # Creating an else statement if the password doesn't match a value in the UserInput.txt file
                         print("Incorrect password. Please try again.")                                              # Telling the user they entered the wrong password and to try again
+                        break
             else:                                                                                                   # Creating and else statement if the username doesn't match the value in the UserInput.txt file
-                print("Username is incorrect please try again.")                                                    # Telling the username they entered a wrong username and to try again
+                print("Username is incorrect. Please try again.")                                                   # Telling the username they entered a wrong username and to try again
                 accountCheck()                                                                                      # Re-runs the accountCheck and the user_find(file) functions.
                 user_find(file)                                                                                     # Re-runs the accountCheck and the user_find(file) functions.
 main()                                                                                                              # Ends main function
