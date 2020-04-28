@@ -5,8 +5,8 @@ import os.path
 
 def main():                                                                                                         # Creating the main function
     with open ("UserInput.txt","r+") as file:                                                                       # Setting the main function to open UserInput.txt as a variable file using read permissions.
-        file_reader = csv.reader(file)                                                                              # 
-        user_find(file_reader)
+        file_reader = csv.reader(file)                                                                              # Creating a variable named file_reader to read the UserInput.txt file with a csv (Comma separated value) reader
+        user_find(file_reader)                                                                                      # Running the user_find function to call the main function and read through the text file for the specified user
         file.close()
 
 def check():                                                                                                        # Creating function called check that will check if the necessary file has been created or not, and if it hasn't it will create it.
@@ -52,11 +52,12 @@ def user_find(file):                                                            
                         print("Username and password are correct. You are now logged in!")                          # If it matches it lets you know you successfully logged in.
                         sys.exit                                                                                    # Exits the program
                         break                                                                                       # Breaks the loop once the condition has been satisfied.
-                    else:                                                                                           # Creating an else statement if the username doesn't match a value in the UserInput.txt file
-                        print("Incorrect password. Please try again.")                                              # Exiting program is
-            else:
-                print("Username is incorrect please try again.")
-                accountCheck()
-                user_find(file)
-main()
+                    else:                                                                                           # Creating an else statement if the password doesn't match a value in the UserInput.txt file
+                        print("Incorrect password. Please try again.")                                              # Telling the user they entered the wrong password and to try again
+            else:                                                                                                   # Creating and else statement if the username doesn't match the value in the UserInput.txt file
+                print("Username is incorrect please try again.")                                                    # Telling the username they entered a wrong username and to try again
+                accountCheck()                                                                                      # Re-runs the accountCheck and the user_find(file) functions.
+                user_find(file)                                                                                     # Re-runs the accountCheck and the user_find(file) functions.
+main()                                                                                                              # Ends main function
+                                                                                                                    # I know this is some spaghetti code but I threw this together in two days.
 
