@@ -29,8 +29,7 @@ def accountCheck():
             print("What would you like your password to be?")                                                       # Asking the user what they want their password to be
             password = input()                                                                                      # Asking for the user's input and creating a variable named password from it
             with open ("UserInput.txt", "a") as file:                                                               # Opens the file UserInput.txt with writing capabilities
-                file.write('\n')
-                file.write("%s,%s" %(username, password))                                                           # Writes the entered inputs for username and password into the UserInput.txt file
+                file.write("%s,%s\n" %(username, password))                                                           # Writes the entered inputs for username and password into the UserInput.txt file
                 file.close()                                                                                        # Closes the UserInput.txt file
                 print("You have successfully registered.")                                                                                        
         else:
